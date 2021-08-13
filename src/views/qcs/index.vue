@@ -27,7 +27,7 @@
                   <div class="luotong_row1">
                     <div
                         v-for="(item, index) in luotongData.luotongRow1Data"
-                        :key="index"
+                        :key="index+'1'"
                     >
                       <div
                           v-if="item.position == 'l'"
@@ -46,7 +46,7 @@
                   <div class="luotong_row2">
                     <div
                         v-for="(item, index) in luotongData.luotongRow2Data"
-                        :key="index"
+                        :key="index+'2'"
                     >
                       <div
                           v-if="item.position == 'l'"
@@ -90,7 +90,7 @@
                   <div class="qinghuaCol1">
                     <div
                         v-for="(item, index) in qinghuaData.qinghuaCol1Data"
-                        :key="index"
+                        :key="index+'3'"
                         class="qinghua_item"
                     >
                       <qinghua :data="item"></qinghua>
@@ -112,7 +112,7 @@
                     <div
                         v-for="(item, index) in qinghuaData.qinghuaCol2Data
                         .duocangData1"
-                        :key="index"
+                        :key="index+'4'"
                     >
                       <div class="item">
                         <div class="item1" @click="clickHandle('duocang', item)">
@@ -143,7 +143,7 @@
                     <div
                         v-for="(item, index) in qinghuaData.qinghuaCol2Data
                         .duocangData2"
-                        :key="index"
+                        :key="index+'5'"
                     >
                       <div class="item">
                         <div class="item1" @click="clickHandle('duocang', item)">
@@ -869,7 +869,7 @@ export default {
      */
     closeParentHandle() {
       console.log("关闭弹窗触发事件")
-      this.$message('关闭二级轮询');
+      // this.$message('关闭二级轮询');
       // 清除二级轮询
       clearInterval(this.secXiShaTimer)
       clearInterval(this.secTxcsomlTimer)
@@ -885,13 +885,13 @@ export default {
     getInfoByDevSn(type, devSn) {
       const time = 1000 * 5;
       // 先清除一级定时器
-      this.$message('关闭一级轮询');
+      // this.$message('关闭一级轮询');
       clearInterval(this.timer)
-      this.$notify({
-        title: '成功',
-        message: '开启二级轮询',
-        type: 'success'
-      });
+      // this.$notify({
+      //   title: '成功',
+      //   message: '开启二级轮询',
+      //   type: 'success'
+      // });
       switch (type) {
         case "XISHA":
           // 获取细纱实时数据
@@ -935,11 +935,11 @@ export default {
       }
     },
     clickButton() {
-      this.$notify({
-        title: '成功',
-        message: '开启一级轮询',
-        type: 'success'
-      });
+      // this.$notify({
+      //   title: '成功',
+      //   message: '开启一级轮询',
+      //   type: 'success'
+      // });
       // 初始化一级数据
       // 获取细纱分组数据
       this.$store.dispatch('actXiShaGroup')

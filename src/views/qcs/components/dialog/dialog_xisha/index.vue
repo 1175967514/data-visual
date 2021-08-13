@@ -333,7 +333,7 @@ export default {
             data: [
               {
                 name: "罗拉线速",
-                value: this.info.llzs/100,
+                value: this.info.llzs=="None"?0:this.info.llzs/100,
               },
             ],
           },

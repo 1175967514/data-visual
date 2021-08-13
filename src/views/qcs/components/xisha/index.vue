@@ -5,8 +5,8 @@
         <span class="content_title">设备编号：</span>{{ id }}<br />
         <span class="content_title">设备状态：</span
         >{{ getHeadName(data.stateCode) }}<br />
-        <span class="content_title">设备效率：</span>{{ data.xiaolv*100 }}%}<br />
-        <span class="content_title">更新时间：{{data.time}}</span>
+        <span class="content_title">设备效率：</span>{{ data.xiaolv*100 }}%<br />
+        <span class="content_title">更新时间：</span>{{data.time}}
       </div>
       <svg
         id="细纱机_拷贝"
