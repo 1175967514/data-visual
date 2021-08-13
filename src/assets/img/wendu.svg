@@ -1,0 +1,21 @@
+<svg id="温湿度表" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" viewBox="0 0 140 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4db8ba;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: 0.4;
+      }
+
+      .cls-2 {
+        fill: #192734;
+      }
+    </style>
+  </defs>
+  <circle id="椭圆_1" data-name="椭圆 1" class="cls-1" cx="70" cy="70" r="70"/>
+  <circle id="椭圆_1_拷贝" data-name="椭圆 1 拷贝" class="cls-2" cx="69.5" cy="69.5" r="24.5"/>
+  <image id="图层_2" data-name="图层 2" x="54" y="54" width="13" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAfCAMAAAALK7feAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABYlBMVEX////tOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCztOCwAAADnAh/CAAAAdHRSTlMAMJbmlzJKwYRbgsJTH79lXsAkTsgjIMVRTbwc0WhMvSYd1WzUayUKRwlq7n4S07sXqbEN0qeqbhgQzGBWE6irEVoqxHIBrbBtMQ6kioGsD0vQfba4es7x8vRZ1mTY2ixjcFfd995zKMNhLkC+K1xYVQJn7Ht7PHUAAAABYktHRHWoapj7AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5QgECBMykmS9rQAAAQJJREFUGNO10FdTwlAQBeBjIyJKgKDRBBQ1IBbEgEZBEESDFXsDUey9u/9/vLlBxwdf3Ycz852XnV2ATUNjU3ML6uMQWp1trnYbHW6Rpcfr45L8nSy75G6uHsVq1UCQq7cvxLJ/YPC3tPCfigxFh9VvKerI6FhsvK74hE6J5OSPpsj4F2nT9rHxGaZUepYr48rOUS7vnrdQWFg0i7RkLvtXgNW1daBICaC0sYktIQvfNgVCSCoZGDtI7RLRXh77Bzh0InrEVHagUsZxFYUTptMazjScG8DF5dV1BdBvcHsnAbX7B+Dx6Rl4SUv2W2Vrvfkq5MQ3Ufd63nkb+ZA/5aD1xi9x9zgNVfHC3wAAAABJRU5ErkJggg=="/>
+  <image id="图层_2_拷贝" data-name="图层 2 拷贝" x="72" y="54" width="13" height="31" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAfCAMAAAALK7feAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABYlBMVEX///8Nj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/INj/IAAACd6N4YAAAAdHRSTlMAMJbmlzJKwYRbgsJTH79lXsAkTsgjIMVRTbwc0WhMvSYd1WzUayUKRwlq7n4S07sXqbEN0qeqbhgQzGBWE6irEVoqxHIBrbBtMQ6kioGsD0vQfba4es7x8vRZ1mTY2ixjcFfd995zKMNhLkC+K1xYVQJn7Ht7PHUAAAABYktHRHWoapj7AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5QgECBMykmS9rQAAAQJJREFUGNO10FdTwlAQBeBjIyJKgKDRBBQ1IBbEgEZBEESDFXsDUey9u/9/vLlBxwdf3Ycz852XnV2ATUNjU3ML6uMQWp1trnYbHW6Rpcfr45L8nSy75G6uHsVq1UCQq7cvxLJ/YPC3tPCfigxFh9VvKerI6FhsvK74hE6J5OSPpsj4F2nT9rHxGaZUepYr48rOUS7vnrdQWFg0i7RkLvtXgNW1daBICaC0sYktIQvfNgVCSCoZGDtI7RLRXh77Bzh0InrEVHagUsZxFYUTptMazjScG8DF5dV1BdBvcHsnAbX7B+Dx6Rl4SUv2W2Vrvfkq5MQ3Ufd63nkb+ZA/5aD1xi9x9zgNVfHC3wAAAABJRU5ErkJggg=="/>
+</svg>

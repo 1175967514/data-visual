@@ -1,0 +1,502 @@
+@font-face {
+  font-family: electronicFont;
+  src: url(../style/fonts/DS-DIGIT.TTF);
+}
+body {
+  // background-image: url("../img/bg1.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background: rgb(26, 28, 40);
+  margin: 0px !important;
+  .number {
+    font-family: electronicFont;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .index {
+    width: 100%;
+    .header {
+      width: 100% !important;
+      height: 80px;
+      background-image: url("../img/title.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      h1 {
+        width: 100%;
+        display: inline-block;
+        color: #fff;
+        text-align: center;
+        opacity: 0.85;
+        text-shadow: 5px 2px 6px #000; //text-show是字的阴影
+      }
+    }
+    .content {
+      width: 100%;
+      overflow: hidden;
+      .row1Style {
+        height: 40%;
+        padding: 5px;
+        .content_title {
+          width: 100%;
+          height: 30px;
+          text-align: center;
+          padding: 20px, 0;
+          color: #5affc6;
+
+          .content_text {
+            font-weight: 400;
+            line-height: 30px;
+            font-size: 14px;
+            vertical-align: middle;
+          }
+          .content_img {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+          }
+        }
+        .row {
+          padding: 5px 0;
+          height: 100%;
+          .content_body {
+            display: flex;
+            height: 100%;
+
+            .luotong {
+              display: block;
+              width: 11%;
+              height: 100%;
+              position: relative;
+              .luotong_body {
+                width: 100%;
+                height: 78%;
+                position: absolute;
+                top: 0;
+                padding-top: 15px;
+                .luotong_row1 {
+                  width: 100%;
+                  height: 30%;
+                  display: flex;
+                  padding-top: 15px;
+                  // border: 1px solid #000;
+                  justify-content: space-around;
+                }
+                .luotong_row2 {
+                  margin-top: 15px;
+                  width: 100%;
+                  display: flex;
+                  height: 30%;
+                  justify-content: left;
+                  // border: 1px solid #000;
+                }
+                // .wendu_bg{
+                //   position: absolute;
+                //   // left: 30%;
+                //    top: 30%;
+                //   margin: 0 auto;
+                // }
+              }
+            }
+            .xisha_1 {
+              width: 20%;
+              display: block;
+              height: 100%;
+              position: relative;
+              .xisha_body {
+                width: 100%;
+                height: 78%;
+                position: absolute;
+                top: 0;
+                margin-top: 15px;
+                .xisha_row1 {
+                  justify-content: space-around;
+                  margin-top: 15px;
+                  width: 100%;
+                  height: 40%;
+                  display: flex;
+                  // border: 1px solid #000;
+                }
+              }
+            }
+            .xisha_2 {
+              width: 33%;
+              display: block;
+              height: 100%;
+              position: relative;
+              .xisha_body {
+                width: 100%;
+                height: 78%;
+                position: absolute;
+                top: 0;
+                margin-top: 15px;
+                .xisha_row2,
+                .xisha_row3,
+                .xisha_row4 {
+                  justify-content: space-around;
+                  margin-top: 15px;
+                  width: 100%;
+                  height: 30%;
+                  display: flex;
+                }
+              }
+            }
+            .cusha {
+              width: 6%;
+              display: block;
+              height: 100%;
+              position: relative;
+              .cusha_body {
+                width: 100%;
+                height: 78%;
+                position: absolute;
+                left: 50%;
+                .cusha_item {
+                  height: 7%;
+                }
+              }
+            }
+            .jingtiao {
+              width: 8%;
+              display: block;
+              height: 100%;
+              position: relative;
+              .jingtiao_body {
+                width: 100%;
+                height: 78%;
+                position: absolute;
+                display: flex;
+                .jingtiaoCol {
+                  width: 50%;
+                }
+
+                .jingtiao_item {
+                  height: 8%;
+                }
+              }
+            }
+
+            .liumian {
+              width: 10%;
+              display: block;
+              height: 100%;
+              position: relative;
+              .liumian_body {
+                width: 100%;
+                height: 78%;
+                position: absolute;
+                left: 0;
+                .liumianRol {
+                  width: 100%;
+                  height: 18%;
+                  display: flex;
+                  justify-content: space-around;
+                }
+              }
+            }
+            .qinghua {
+              width: 12%;
+              display: block;
+              height: 100%;
+              position: relative;
+
+              .qinghua_body {
+                width: 100%;
+                height: 78%;
+                position: absolute;
+                display: flex;
+                .qinghuaCol1 {
+                  width: 50%;
+                  position: absolute;
+                  left: 8%;
+                }
+
+                .qinghuaCol2 {
+                  position: absolute;
+                  right: 8%;
+                  .item {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .rowStyle {
+        height: 29%;
+        display: flex;
+        justify-content: space-between;
+        .rowStyle_6 {
+          padding: 5px;
+          width: 24%;
+
+          .row {
+            padding: 5px 0;
+            height: 100%;
+            // 样式重写
+            .el-table {
+              text-align: center;
+              font-size: 8px;
+              height: 100%;
+              overflow-y: scroll;
+            }
+            .el-table,
+            .el-table__expanded-cell {
+              background: rgb(0, 0, 0, 0);
+            }
+            .el-table::before {
+              height: 0px;
+            }
+            .el-table__body tr:hover > td {
+              background-color: #134087 !important;
+            }
+            .el-table th,
+            .el-table tr {
+              background: rgb(0, 0, 0, 0);
+              color: #fff;
+            }
+            .el-table tr td:first-child {
+              background: rgb(52, 145, 180);
+              color: #fff;
+            }
+            .el-table td,
+            .el-table th.is-leaf {
+              border-bottom: 0.5px solid #000728;
+            }
+            .el-table .cell,
+            .el-table--border td:first-child .cell,
+            .el-table--border th:first-child .cell {
+              padding-left: 2px;
+            }
+
+            table {
+              width: 100% !important;
+            }
+            .el-table th > .cell {
+              padding-left: 0px;
+              padding-right: 0px;
+            }
+            .el-table .cell {
+              padding-right: 0px;
+            }
+            .el-table td,
+            .el-table th {
+              padding: 2px 0;
+            }
+            .echart {
+              width: 100%;
+              height: 100%;
+            }
+            .echarts_group {
+              display: flex;
+              width: 100%;
+              height: 100%;
+            }
+            .echarts_group_2 {
+              display: block;
+              width: 100%;
+              height: 85%;
+              .echarts_div {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                .echarts_item {
+                  width: 50%;
+                  height: 100%;
+                }
+              }
+              .echarts_top {
+                width: 100%;
+                height: 50%;
+              }
+              .echarts_bottom {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                .echarts_bottom_left {
+                  width: 50%;
+                  height: 100%;
+                }
+                .echarts_bottom_right {
+                  width: 50%;
+                  height: 100%;
+                }
+              }
+            }
+            .echarts_group_1 {
+              display: flex;
+              width: 100%;
+              height: 85%;
+              .echarts_left {
+                width: 40%;
+              }
+              .echarts_right {
+                width: 55%;
+                .echarts7,
+                .echarts8 {
+                  height: 50%;
+                }
+                .echarts8 {
+                  padding-top: 5px;
+                }
+              }
+            }
+          }
+          .echarts4,
+          .echarts5 {
+            width: 50%;
+          }
+          .echart {
+            position: relative;
+            .echarts6_title {
+              position: absolute;
+              left: 30%;
+              padding: 1px;
+              color: #fff;
+              background: #147bdb;
+              border-radius: 2px;
+            }
+            .text {
+              font-size: 6px !important;
+            }
+            .echarts6_title_text {
+              font-size: 15px !important;
+              font-family: electronicFont;
+              color: #5affc6;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .box_header {
+          width: 100%;
+          color: #fff;
+          opacity: 0.85;
+          text-shadow: 5px 2px 6px #000; //text-show是字的阴影
+          font-weight: bold;
+          font-size: 14px;
+          height: 35px;
+          position: relative;
+          .box_header_text {
+            margin-left: 15px;
+          }
+          .box_header_img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+          }
+        }
+        // 文字垂直居中
+        // .box_header::before {
+        //   display: inline-block;
+        //   content: "";
+        //   height: 100%;
+        //   vertical-align: middle;
+        // }
+      }
+    }
+  }
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.04) url(../img/line.png);
+
+  /* 要边框的盒子 相对地址 */
+  position: relative;
+}
+/* 通过before after 两个伪类制作 上方的装饰*/
+.box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 2px solid rgba(124, 231, 253, 0.9);
+  border-top: 2px solid rgba(124, 231, 253, 0.9);
+  width: 10px;
+  height: 10px;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 2px solid rgba(124, 231, 253, 0.9);
+  border-top: 2px solid rgba(124, 231, 253, 0.9);
+  width: 10px;
+  height: 10px;
+}
+.boxItem {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.boxItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid rgba(124, 231, 253, 0.9);
+  border-bottom: 2px solid rgba(124, 231, 253, 0.9);
+  width: 10px;
+  height: 10px;
+}
+.boxItem::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid rgba(124, 231, 253, 0.9);
+  border-bottom: 2px solid rgba(124, 231, 253, 0.9);
+  width: 10px;
+  height: 10px;
+}
+
+//鼠标移入样式
+.content_title {
+  color: rgb(21, 100, 200);
+  font-size: 14px;
+}
+
+// .el-dialog{
+// }
+.el-dialog {
+  background: rgb(27, 40, 52,0.9);
+  .el-dialog__title {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+.el-card {
+  background: rgb(27, 40, 52,0.9);
+  border: none;
+  .el-card__header {
+    color: #fff;
+    padding: 15px 10px;
+  }
+  .el-card__body{
+    padding:8px;
+  }
+}
+.el-table{
+  border: none;
+  .el-table__header th {
+    background: rgb(111, 155, 184,0.9) !important;
+    border: none;
+    color: #fff;
+  }
+  .el-table__row td{
+    background: rgb(28,46,59) !important;
+    color: #fff;
+    border-color: #58D9F9;
+  }
+
+}
+
+// 28,46,59
+

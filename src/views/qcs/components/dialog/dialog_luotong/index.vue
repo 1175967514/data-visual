@@ -1,0 +1,328 @@
+<template>
+  <div class="dialog">
+    <!-- 络筒弹窗控件 -->
+    <el-dialog :title="title" :visible.sync="Dialog">
+      <el-row>
+        <el-col :span="15">
+          <el-row :gutter="10">
+            <el-col :span="8">
+              <span class="title"> 当前状态：</span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 产量： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 长粗： </span>
+            </el-col>
+          </el-row>
+          <el-row :gutter="10">
+            <el-col :span="8">
+              <span class="title"> 车台号： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 重量： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 长细： </span>
+            </el-col>
+          </el-row>
+          <el-row :gutter="10">
+            <el-col :span="8">
+              <span class="title"> 品种： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 满桶数量： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 换管： </span>
+            </el-col>
+          </el-row>
+          <el-row :gutter="10">
+            <el-col :span="8">
+              <span class="title"> 组号： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 循环： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 错支： </span>
+            </el-col>
+          </el-row>
+          <el-row :gutter="10">
+            <el-col :span="8">
+              <span class="title"> 起始锭号 </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 棉结： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 捻接： </span>
+            </el-col>
+          </el-row>
+          <el-row :gutter="10">
+            <el-col :span="8">
+              <span class="title"> 结束锭号： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 验结： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 切疵： </span>
+            </el-col>
+          </el-row>
+          <el-row :gutter="10">
+            <el-col :span="8">
+              <span class="title"> 纱支： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 短粗： </span>
+            </el-col>
+            <el-col :span="8">
+              <span class="title"> 挡车工： </span>
+            </el-col>
+          </el-row>
+        </el-col>
+        <el-col :span="9">
+          <div class="echarts">
+            <div ref="lulotongEcharts" style="width: 100%; height: 100%"></div>
+          </div>
+        </el-col>
+      </el-row>
+      <el-row :gutter="10">
+        <el-col :span="14">
+          <el-card class="box-card">
+            <div slot="header" class="clearfix">
+              <span>专件更换</span>
+            </div>
+            <el-table
+              border
+              :data="tableData"
+              style="width: 100%"
+              height="150"
+              size="mini"
+            >
+              <el-table-column prop="code" label="专件编码" width="80">
+              </el-table-column>
+              <el-table-column prop="desc" label="专件描述" width="80">
+              </el-table-column>
+              <el-table-column prop="date" label="上车时间" width="150">
+              </el-table-column>
+              <el-table-column prop="num" label="数量" width="50">
+              </el-table-column>
+              <el-table-column prop="day" label="剩余天数" width="70">
+              </el-table-column>
+            </el-table>
+          </el-card>
+        </el-col>
+        <el-col :span="10">
+          <el-card class="box-card">
+            <div slot="header" class="clearfix">
+              <span>维护计划</span>
+            </div>
+            <el-table
+              border
+              :data="table1Data"
+              style="width: 100%"
+              height="150"
+              size="mini"
+            >
+              <el-table-column prop="whlx" label="维护类型" width="100">
+              </el-table-column>
+              <el-table-column prop="dqjh" label="当前计划" width="100">
+              </el-table-column>
+              <el-table-column prop="sfwc" label="是否完成" width="80">
+              </el-table-column>
+              <el-table-column prop="xcjh" label="下次计划" width="100">
+              </el-table-column>
+            </el-table>
+          </el-card>
+        </el-col>
+      </el-row>
+    </el-dialog>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "dialog",
+  data() {
+    return {
+      Dialog: false,
+      title: "",
+      data: "",
+      tableData: [
+        {
+          code: "ZK101",
+          desc: "抓棉",
+          date: "2021-08-03 15:20:06",
+          num: 100,
+          day: 5,
+        },
+        {
+          code: "ZK101",
+          desc: "抓棉",
+          date: "2021-08-03 15:20:06",
+          num: 100,
+          day: 5,
+        },
+
+        {
+          code: "ZK101",
+          desc: "抓棉",
+          date: "2021-08-03 15:20:06",
+          num: 100,
+          day: 5,
+        },
+
+        {
+          code: "ZK101",
+          desc: "抓棉",
+          date: "2021-08-03 15:20:06",
+          num: 100,
+          day: 5,
+        },
+      ],
+      table1Data: [
+        {
+          whlx: "保养及维护",
+          dqjh: "2021-07-31",
+          sfwc: "否",
+          xcjh: "2021-07-31",
+        },
+        {
+          whlx: "保养及维护",
+          dqjh: "2021-07-31",
+          sfwc: "否",
+          xcjh: "2021-07-31",
+        },
+        {
+          whlx: "保养及维护",
+          dqjh: "2021-07-31",
+          sfwc: "否",
+          xcjh: "2021-07-31",
+        },
+        {
+          whlx: "保养及维护",
+          dqjh: "2021-07-31",
+          sfwc: "否",
+          xcjh: "2021-07-31",
+        },
+        {
+          whlx: "保养及维护",
+          dqjh: "2021-07-31",
+          sfwc: "否",
+          xcjh: "2021-07-31",
+        },
+      ],
+    };
+  },
+
+  mounted() {},
+  methods: {
+    showDialog(data) {
+      this.data = data;
+      this.title = "VCRO-I 络筒" + data.id + "详情";
+      this.Dialog = true;
+      this.$nextTick(() => {
+        this.init();
+      });
+    },
+    init() {
+      var lulotongEcharts = this.$echarts.init(this.$refs.lulotongEcharts);
+      var option = {
+        series: [
+          {
+            type: "gauge",
+
+            center: ["50%", "50%"],
+            radius: "90%",
+            min: 0,
+            max: 100,
+            itemStyle: {
+              color: "#58D9F9",
+              shadowColor: "rgba(0,138,255,0.45)",
+              shadowBlur: 10,
+              shadowOffsetX: 2,
+              shadowOffsetY: 2,
+            },
+            axisLine: {
+              roundCap: true,
+              lineStyle: {
+                width: 15,
+                color: [[1, "#1D3E52"]],
+              },
+            },
+
+            progress: {
+              roundCap: true,
+              show: true,
+              width: 18,
+            },
+
+            axisTick: {
+              show: true,
+            },
+            splitLine: {
+              show: false,
+              length: 15,
+            },
+
+            axisLabel: {
+              distance: 5,
+              color: "#62C6F3",
+              fontSize: 9,
+            },
+            anchor: {
+              show: false,
+            },
+
+            title: {
+              offsetCenter: [0, "85%"],
+              fontSize: 20,
+              color: "#58D9F9",
+            },
+            detail: {
+              valueAnimation: true,
+              fontSize: 28,
+              fontFamily: "electronicFont",
+              offsetCenter: [0, "60%"],
+              color: "rgb(241,241,64)",
+              formatter: function (value) {
+                return Math.round(value) + "%";
+              },
+            },
+
+            data: [
+              {
+                name: "效率",
+                value: 70,
+              },
+            ],
+          },
+        ],
+      };
+
+      lulotongEcharts.setOption(option);
+      window.addEventListener("resize", function () {
+        lulotongEcharts.resize();
+      });
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.el-row {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.echarts {
+  width: 100%;
+  height: 200px;
+}
+.title {
+  color: rgb(111, 155, 184);
+}
+</style>
